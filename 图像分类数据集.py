@@ -49,7 +49,7 @@ show_images(x.reshape(18, 28, 28), 2, 9, titles=get_fashion_mnist_labels(y))
 batch_size = 256
 train_iter = data.DataLoader(mnist_train, batch_size, shuffle=True, num_workers=get_dataloader_workers())
 
-# 取训练数据所需的时间
+# 训练数据所需的时间
 timer = d2l.Timer()
 for x, y in train_iter:
     continue
